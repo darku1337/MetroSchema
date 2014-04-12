@@ -4,7 +4,7 @@ PLUGIN.desc = "Adds custom chat icons for effect"
 
 ---------------------------------------------------- line
 
-local ICON_DWELLER = Material("icon16/wrench_orange.png")
+local ICON_DWELLER = Material("icon16/metrodw.png")
 local ICON_RANGER = Material("icon16/rangerdw.png")
 
 	local ICON_USER = Material("icon16/user.png")
