@@ -1,0 +1,7 @@
+"Gamemode"
+{
+	"base"		"nutscript"
+	"title"		"Metro: Last Light"
+	"author"	"Fayz_Golden"
+	"menusystem" "1"
+}
