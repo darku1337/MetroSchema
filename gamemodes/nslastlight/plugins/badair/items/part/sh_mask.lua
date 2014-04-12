@@ -9,6 +9,7 @@ ITEM.partdata = { -- You can use PAC3 to setup the part.
 }
 ITEM.model = Model("models/half-dead/metroll/p_mask_2.mdl")
 ITEM.weight = 1
+ITEM.overlay = Material("effects/gasmask_screen_1.vmt")
 ITEM.desc = "A Mask that protects you from the bad air area."
 ITEM.price = 200
 
