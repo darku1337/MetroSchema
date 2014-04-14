@@ -4,3 +4,8 @@ ITEM.uniqueID = "lb"
 ITEM.model = Model("models/avoxgaming/mrp/jake/bandit_light.mdl")
 ITEM.price = 500
 ITEM.flag = "v"
+ITEM.data = {
+bulletDef = 0,
+        Condition = 100,
+        Equipped = false
+}

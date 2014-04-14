@@ -4,3 +4,8 @@ ITEM.uniqueID = "gj"
 ITEM.model = Model("models/avoxgaming/mrp/jake/green_coat.mdl")
 ITEM.price = 500
 ITEM.flag = "v"
+ITEM.data = {
+bulletDef = 0,
+        Condition = 100,
+        Equipped = false
+}

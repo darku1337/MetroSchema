@@ -10,6 +10,7 @@ nut.config.menuMusic = "song/metroll.mp3"
 
 nut.util.Include("sv_hooks.lua")
 nut.util.Include("cl_hooks.lua")
+nut.util.Include("sh_baseclient.lua")
 nut.util.Include("cl_legs.lua")
 
 local ICON_DWELLER = Material("icon16/metrodw.png")

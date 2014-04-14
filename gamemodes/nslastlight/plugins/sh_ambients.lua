@@ -14,9 +14,7 @@ if CLIENT then
 	PLUGIN.sndInternal = nil
 	
 	function PLUGIN:Think()
-		PLUGIN.sndWind = PLUGIN.sndWind or CreateSound( LocalPlayer(), "vehicles/fast_windloop1.wav" )
 		PLUGIN.sndInternal = PLUGIN.sndInternal or CreateSound( LocalPlayer(), "ambient/atmosphere/town_ambience.wav" )
-		
 		if !self.timeData.sndGunshot or self.timeData.sndGunshot < CurTime() then
 			surface.PlaySound( Format( "ambient/levels/streetwar/city_battle%d.wav", math.random( 1, 19 ) ) )
 			self.timeData.sndGunshot = CurTime() + math.random( 10, 120 )
@@ -31,19 +29,9 @@ if CLIENT then
 			data.endpos = data.start + Vector( 0, 0, 10000 )
 			data.filter = LocalPlayer()
 		local trace = util.TraceLine(data)
-		if trace.HitSky then
-			if !self.sndWind:IsPlaying() then
-				self.sndWind:Play()
-			end
-			self.sndWind:ChangeVolume( .5, 4 )
-			self.sndInternal:ChangeVolume( 0, 4 )
-		else
 			if !self.sndInternal:IsPlaying() then
 				self.sndInternal:Play()
 			end
-			self.sndWind:ChangeVolume( 0, 4 )
 			self.sndInternal:ChangeVolume( 1, 4 )
 		end
 	end
-	
-end
