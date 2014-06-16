@@ -1,0 +1,2 @@
+resource.AddSingleFile("icon16/metrodw.png")
+resource.AddSingleFile("icon16/rangerdw.png")
