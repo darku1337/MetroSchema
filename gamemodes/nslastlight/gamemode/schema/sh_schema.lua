@@ -12,6 +12,7 @@ nut.util.Include("sv_hooks.lua")
 nut.util.Include("cl_hooks.lua")
 nut.util.Include("sh_baseclient.lua")
 nut.util.Include("cl_legs.lua")
+nut.util.Include("sv_schema.lua")
 
 local ICON_DWELLER = Material("icon16/metrodw.png")
 local ICON_RANGER = Material("icon16/rangerdw.png")
